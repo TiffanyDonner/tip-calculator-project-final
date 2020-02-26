@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tip Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tip Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
+
+	<form id="tipForm" action="">
+
+		<h1>Tip Calculator:</h1>
+
+		<!-- One "tab" for each step in the form: -->
+		<div class="tab">How much is your bill? Tipping is not mandatory, however in the United States the staff relys on tips for their income...
+        	<p><input type="number" id="amount" placeholder="Bill Amount" maxlength="9"></p>
+		</div>
+
+		<div class="tab">How was the service? The tip is related only to the person serving you. If you ever returned
+			would you ask for the same server...
+			<p><select id="tip">
+				<option value="0.05">Never returning! (5%)</option>
+				<option value="0.1">Only if I had no choice. (10%)</option>
+				<option value="0.15">Maybe. They were nice. (15%)</option>
+				<option value="0.2">Yes. They were good. (20%)</option>
+				<option value="0.3">They were great! I want them to know it. (30%)</option>
+                <option value="0.4">Outstanding! I want them to remember me. (40%)</option>
+			</select></p>
+		</div>
+
+		<div class="tab">How many people are sharing the bill?
+			<p> <select id="numberPeople">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+			</select></p>
+		</div>
+
+        <div class="tab">
+		<div id="single">
+			<p><b>Tip: $<span id="tipAmount"></span></b></p>
+			<p><b>Total: $<span id="billTotal"></span></b></p>
+		</div>
+		<div id="multiple">
+			<p><b>Tip Per Person: $<span id="totalTipMultiple"></span></b></p>
+			<p><b>Total Per Person: $<span id="totalAmountEach"></span></b></p>
+			<p><b>Bill Total: $<span id="billTotalmultiple"></span></b></p>
+		</div>
+        </div>
+
+		<div style="overflow:auto;">
+			<div style="float:right;">
+				<button class="calc" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+				<button class="calc" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+			</div>
+		</div>
+
+		<!-- Circles which indicates the steps of the form: -->
+		<div style="text-align:center;margin-top:40px;">
+			<span class="step"></span>
+			<span class="step"></span>
+			<span class="step"></span>
+            <span class="step"></span>
+            
+		</div>
+        
+
+	</form>
 
 	<script src="assets/main.js"></script>
 </body>
+
 </html>

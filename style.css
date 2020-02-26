@@ -1,0 +1,87 @@
+body {
+  background:#ffcd00;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+/* Style the form */
+#tipForm {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 30px;
+  background-color: #004b87;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px 0 black;
+}
+
+.calc {
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to bottom right, #002868, #f1f1f1, #bf0a30);  
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px 0 black;
+}
+ 
+#single, #multiple {
+  margin: 30px 0;
+  font-size: 1.3em;
+}
+
+/* Style the input fields */
+input {
+  width: 80%;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
