@@ -1,37 +1,37 @@
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
-function showTab(n) {
+function showTab(nextTab) {
     // This function will display the specified tab of the form ...
-    var x = document.getElementsByClassName("tab");
-    x[n].style.display = "block";
+    var displayTab = document.getElementsByClassName("tab");
+    displayTab[nextTab].style.display = "block";
     // ... and fix the Previous/Next buttons:
-    if (n == 0) {
+    if (nextTab == 0) {
         document.getElementById("prevBtn").style.display = "none";
     } else {
         document.getElementById("prevBtn").style.display = "inline";
     }
-    if (n == (x.length - 1)) {
+    if (nextTab == (displayTab.length - 1)) {
         document.getElementById("nextBtn").innerHTML = "Restart";
         calculateTip();
     } else {
         document.getElementById("nextBtn").innerHTML = "Next";
     }
     // ... and run a function that displays the correct step indicator:
-    fixStepIndicator(n)
+    fixStepIndicator(nextTab)
 }
 
-function nextPrev(n) {
+function nextPrev(nextTab) {
     // This function will figure out which tab to display
-    var x = document.getElementsByClassName("tab");
+    var displayTab = document.getElementsByClassName("tab");
     // Exit the function if any field in the current tab is invalid:
-    if (n == 1 && !validateForm()) return false;
+    if (nextTab == 1 && !validateForm()) return false;
     // Hide the current tab:
-    x[currentTab].style.display = "none";
+    displayTab[currentTab].style.display = "none";
     // Increase or decrease the current tab by 1:
-    currentTab = currentTab + n;
+    currentTab = currentTab + nextTab;
     // if you have reached the end of the form... :
-    if (currentTab >= x.length) {
+    if (currentTab >= displayTab.length) {
         //...the form gets submitted:
         document.getElementById("tipForm").submit();
         return false;
@@ -42,15 +42,15 @@ function nextPrev(n) {
 
 function validateForm() {
     // This function deals with validation of the form fields
-    var x, y, i, valid = true;
-    x = document.getElementsByClassName("tab");
-    y = x[currentTab].getElementsByTagName("input");
+    var displayTab, controlInput, inputField, valid = true;
+    displayTab = document.getElementsByClassName("tab");
+    controlInput = displayTab[currentTab].getElementsByTagName("input");
     // A loop that checks every input field in the current tab:
-    for (i = 0; i < y.length; i++) {
+    for (inputField = 0; inputField < controlInput.length; inputField++) {
         // If a field is empty...
-        if (y[i].value == "") {
+        if (controlInput[inputField].value == "") {
             // add an "invalid" class to the field:
-            y[i].className += " invalid";
+            controlInput[inputField].className += " invalid";
             // and set the current valid status to false:
             valid = false;
         }
@@ -62,15 +62,15 @@ function validateForm() {
     return valid; // return the valid status
 }
 
-function fixStepIndicator(n) {
+function fixStepIndicator(nextTab) {
     // This function removes the "active" class of all steps...
-    var i, x = document.getElementsByClassName("step");
-    for (i = 0; i < x.length; i++) {
-        x[i].className = x[i].className.replace(" active", "");
+    var inputField, displayTab = document.getElementsByClassName("step");
+    for (inputField = 0; inputField < displayTab.length; inputField++) {
+        displayTab[inputField].className = displayTab[inputField].className.replace(" active", "");
 
     }
     //... and adds the "active" class to the current step:
-    x[n].className += " active";
+    displayTab[nextTab].className += " active";
 
 
 }
