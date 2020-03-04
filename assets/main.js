@@ -1,4 +1,4 @@
-//Calulation for the Tip Calulator
+//Calulation for the Tip
 function calculateTip() {
 
     resetTip();
