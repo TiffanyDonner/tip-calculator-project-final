@@ -11,7 +11,7 @@ This application uses a wizard to navigate a user through each step easily so th
 
 ### User Stories
 In Sweden we do not tip, so why do I need to leave a tip when I travel to America?
-![Why Tip](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/97d0161a59dc7763b59ab5b8ebcc15a85b6ec7be/assets/images/billAmount.PNG "Why Tip")
+![Why Tip](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/billAmount.PNG "Why Tip Image")
 As a tourist in the US I know I need to tip, but I often get confused how much...
 When traveling on business I need a calulator that can seperate the bill.
 
