@@ -1,35 +1,22 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Tip Calculator for Swedes
+A big question I often get from my swedish friends when they are traveling to the USA is... 
+How do we know how much to tip at a returant?
+As a former bartendar I feel that tipping is more a feeling than a number. This calulator not only uses math
+to help give you a solution, but helps you decided how you feel about the pertcetage of the bill you are leaving. 
+Also, why you are leaving a tip at all...
 
-Welcome Tiffany Donner,
+## UX
+The user of this application needs clarity of why and how to leave a tip to a server in an American resturant.
+This application uses a wizard to navigate a user through each step easily so they are not overwelmed. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+### User Stories
+In Sweden we do not tip, so why do I need to leave a tip when I travel to America?
+![Why Tip](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/97d0161a59dc7763b59ab5b8ebcc15a85b6ec7be/assets/images/billAmount.PNG "Why Tip")
+As a tourist in the US I know I need to tip, but I often get confused how much...
+When traveling on business I need a calulator that can seperate the bill.
 
-## Gitpod Reminders
+Calulator code guide:
+https://codepen.io/cphemm/pen/reNwWd
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Expose*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Expose*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+Form Wizard
+https://www.w3schools.com/howto/howto_js_form_steps.asp
