@@ -20,6 +20,7 @@ When traveling on business I need a calulator that can seperate the bill.
 ![How Many People](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/sharingBill.PNG "Number of People Image")
 
 ### Wireframes
+![Website Plan](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/tipCalculatorWireframes.PNG "Wireframes Image")
 
 
 Calulator code guide:
