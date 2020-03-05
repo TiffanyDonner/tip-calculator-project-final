@@ -7,17 +7,23 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Tip Calculator</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/5bc0263873.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 	<form id="tipForm" action="">
 
-		<h1>Tip Calculator:</h1>
+		<header>
+			<h1>
+				<i class="fas fa-dollar-sign"> Tip Calculator</i>
+			</h1>
+		</header>
 
 		<!-- One "tab" for each step in the form: -->
-		<div class="tab">How much is your bill? Tipping is not mandatory, however in the United States the staff relys on tips for their income...
-        	<p><input type="number" id="amount" placeholder="Bill Amount" maxlength="9"></p>
+		<div class="tab">How much is your bill? Tipping is not mandatory, however in the United States the staff relys
+			on tips for their income...
+			<p><input type="number" id="amount" placeholder="Bill Amount" maxlength="9"></p>
 		</div>
 
 		<div class="tab">How was the service? The tip is related only to the person serving you. If you ever returned
@@ -46,28 +52,20 @@
 				<option value="10">10</option>
 				<option value="11">11</option>
 				<option value="12">12</option>
-				<option value="13">13</option>
-				<option value="14">14</option>
-				<option value="15">15</option>
-				<option value="16">16</option>
-				<option value="17">17</option>
-				<option value="18">18</option>
-				<option value="19">19</option>
-				<option value="20">20</option>
 			</select></p>
 		</div>
 
-        <div class="tab">
-		<div id="single">
-			<p><b>Tip: $<span id="tipAmount"></span></b></p>
-			<p><b>Total: $<span id="billTotal"></span></b></p>
+		<div class="tab">
+			<div id="single">
+				<p><b>Tip: $<span id="tipAmount"></span></b></p>
+				<p><b>Total: $<span id="billTotal"></span></b></p>
+			</div>
+			<div id="multiple">
+				<p><b>Tip Per Person: $<span id="totalTipMultiple"></span></b></p>
+				<p><b>Total Per Person: $<span id="totalAmountEach"></span></b></p>
+				<p><b>Bill Total: $<span id="billTotalmultiple"></span></b></p>
+			</div>
 		</div>
-		<div id="multiple">
-			<p><b>Tip Per Person: $<span id="totalTipMultiple"></span></b></p>
-			<p><b>Total Per Person: $<span id="totalAmountEach"></span></b></p>
-			<p><b>Bill Total: $<span id="billTotalmultiple"></span></b></p>
-		</div>
-        </div>
 
 		<div style="overflow:auto;">
 			<div style="float:right;">
@@ -77,17 +75,13 @@
 		</div>
 
 		<!-- Circles which indicates the steps of the form: -->
-		<div style="text-align:center;margin-top:40px;">
+		<navigation style="text-align:center;margin-top:40px;">
 			<span class="step"></span>
 			<span class="step"></span>
 			<span class="step"></span>
-            <span class="step"></span>
-            
-		</div>
-        
-
+			<span class="step"></span>
+		</navigation>
 	</form>
-
 	<script src="assets/main.js"></script>
 </body>
 

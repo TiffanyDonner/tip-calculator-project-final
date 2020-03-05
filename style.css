@@ -1,17 +1,17 @@
 body {
-  background:#ffcd00;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+    background:#ffcd00;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
     color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 /* Style the form */

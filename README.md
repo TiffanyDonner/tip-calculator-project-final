@@ -7,13 +7,20 @@ Also, why you are leaving a tip at all...
 
 ## UX
 The user of this application needs clarity of why and how to leave a tip to a server in an American resturant.
-This application uses a wizard to navigate a user through each step easily so they are not overwelmed. 
+This application allows the user quick access and utilizes a wizard workflow to navigate a user through each step 
+easily so they are not overwelmed. For the experience for the user the application will be in Swedish, however 
+for the purpose of this project it will be displayed in English.
 
 ### User Stories
 In Sweden we do not tip, so why do I need to leave a tip when I travel to America?
 ![Why Tip](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/billAmount.PNG "Why Tip Image")
 As a tourist in the US I know I need to tip, but I often get confused how much...
+![What to Tip](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/tipPercentage.PNG "What to Tip Image")
 When traveling on business I need a calulator that can seperate the bill.
+![How Many People](https://github.com/TiffanyDonner/tip-calculator-project-final/blob/master/assets/images/sharingBill.PNG "Number of People Image")
+
+### Wireframes
+
 
 Calulator code guide:
 https://codepen.io/cphemm/pen/reNwWd
